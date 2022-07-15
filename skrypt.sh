@@ -17,7 +17,7 @@ logs(){
 
 	for ((i=1;i<=ilosc;i++))
 	do
-		echo log$i $(basename $0) $(data) > logs/log$i.txt
+		echo log$i $(basename $0) $(data) > logs/logs$i/log$i.txt
 	done
 	
 }
