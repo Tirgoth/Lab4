@@ -22,6 +22,13 @@ logs(){
 	
 }
 
+help(){
+
+	echo "--data"
+	echo "--logs"
+	echo "--help"
+
+}
 
 if [ "$1" = "--data" ]
 then
@@ -29,5 +36,6 @@ then
 elif [ "$1" = "--logs" ]
 then
 	logs
+elif [ "$1" = "--help" ]
 fi
 
