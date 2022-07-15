@@ -48,7 +48,7 @@ help(){
 	echo "--data or -d"
 	echo "--logs or -l"
 	echo "--help or -h"
-
+	echo "--error or -e"
 }
 
 if [ "$1" = "--data" || "$1" = "-d" ] 
