@@ -22,11 +22,27 @@ logs(){
 	
 }
 
+error(){
+
+	ilosc=100
+	
+	if [ "$argument2" -gt 0 ] 
+	then ilosc=$argument2
+	fi
+
+	for ((i=1;i<=ilosc;i++))
+	do
+		echo log$i $(basename $0) $(data) > error/error$i/error$i.txt
+	done
+	
+}
+
 init(){
 
 	git clone https://github.com/Tirgoth/Lab4.git
 	export PATH=$PATH:/skrypt.sh
 }
+
 help(){
 
 	echo "--data"
@@ -41,6 +57,9 @@ then
 elif [ "$1" = "--logs" || "$1" = "-l" ]
 then
 	logs
+elif [ "$1" = "--error" || "$1" = "-e" ]
+then
+	error
 elif [ "$1" = "--help" || "$1" = "-h" ]
 then
 	help
