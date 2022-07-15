@@ -45,9 +45,9 @@ init(){
 
 help(){
 
-	echo "--data"
-	echo "--logs"
-	echo "--help"
+	echo "--data or -d"
+	echo "--logs or -l"
+	echo "--help or -h"
 
 }
 
