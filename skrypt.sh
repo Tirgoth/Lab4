@@ -27,7 +27,7 @@ help(){
 	echo "--data"
 	echo "--logs"
 	echo "--help"
-
+ 
 }
 
 if [ "$1" = "--data" ]
