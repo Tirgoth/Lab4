@@ -27,15 +27,15 @@ help(){
 	echo "--data"
 	echo "--logs"
 	echo "--help"
- 
+
 }
 
-if [ "$1" = "--data" ]
+if [ "$1" = "--data" || "$1" = "-d" ] 
 then
 	data
-elif [ "$1" = "--logs" ]
+elif [ "$1" = "--logs" || "$1" = "-l" ]
 then
 	logs
-elif [ "$1" = "--help" ]
+elif [ "$1" = "--help" || "$1" = "-h" ]
 fi
-
+ 
