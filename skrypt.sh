@@ -22,6 +22,11 @@ logs(){
 	
 }
 
+init(){
+
+	git clone https://github.com/Tirgoth/Lab4.git
+	export PATH=$PATH:/skrypt.sh
+}
 help(){
 
 	echo "--data"
@@ -37,5 +42,10 @@ elif [ "$1" = "--logs" || "$1" = "-l" ]
 then
 	logs
 elif [ "$1" = "--help" || "$1" = "-h" ]
+then
+	help
+elif [ "$1" = "--init" ]
+then 
+	init
 fi
  
